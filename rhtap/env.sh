@@ -47,7 +47,7 @@ export INFO=${INFO-true}
 export STRICT=${STRICT-true}
 export EFFECTIVE_TIME=${EFFECTIVE_TIME-now}
 export HOMEDIR=${HOMEDIR-$(pwd)}
-export TUF_MIRROR=${TUF_MIRROR-http://tuf.rhtap-tas.svc}
+export TUF_MIRROR=${TUF_MIRROR-https://tuf-rhtap-tas.apps.rosa.kx-bf19637130.4kk7.p3.openshiftapps.com}
 
 # Allow PR to succeed even if TAS vars not configured
 export FAIL_IF_TRUSTIFICATION_NOT_CONFIGURED=false
