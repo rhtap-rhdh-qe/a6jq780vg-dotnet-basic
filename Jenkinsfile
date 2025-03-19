@@ -27,7 +27,7 @@ pipeline {
         /* Uncomment this when using Gitlab */
         /* GITOPS_AUTH_USERNAME = credentials('GITOPS_AUTH_USERNAME') */
         /* Set this to the user for your specific registry */
-        /* IMAGE_REGISTRY_USER = credentials('IMAGE_REGISTRY_USER') */
+        IMAGE_REGISTRY_USER = credentials('IMAGE_REGISTRY_USER')
         /* Set this password for your specific registry */
         /* IMAGE_REGISTRY_PASSWORD = credentials('IMAGE_REGISTRY_PASSWORD') */
         /* Default registry is set to quay.io */
