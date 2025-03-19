@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: a6jq780vg-dotnet-basic 
+  description: Secure Supply Chain Example for C# .Net 6.0 example with advanced continuous integration pipeline covering building, CVE scanning, security scanning, signatures,  attestations, SLSA provenance and SBOM along with Gitops-based continuous deployment   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:
+    # ArgoCD apps from this template used rhtap-gitops as the grouping
+    argocd/app-selector: rhtap/gitops=a6jq780vg-dotnet-basic
+    backstage.io/kubernetes-id: a6jq780vg-dotnet-basic 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: a6jq780vg-dotnet-basic
+    quay.io/repository-slug: rhtap_qe/rhtap-qe
+  tags: ["net", "sscs", "sbom", "acs"] 
+spec:
+  type: service
+  owner: user:guest 
+  lifecycle: experimental
+ 

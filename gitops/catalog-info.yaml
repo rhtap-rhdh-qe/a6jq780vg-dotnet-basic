@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: a6jq780vg-dotnet-basic-gitops
+  description: This is GitOps manifest for a6jq780vg-dotnet-basic   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=a6jq780vg-dotnet-basic
+    backstage.io/kubernetes-id: a6jq780vg-dotnet-basic 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: a6jq780vg-dotnet-basic-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:a6jq780vg-dotnet-basic
